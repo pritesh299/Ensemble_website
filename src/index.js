@@ -70,3 +70,108 @@ Announcements.map((card) => {
     count++;
 });
 
+/* <!DOCTYPE html>
+<html class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <title>Ensemble</title>
+    <link href="./output.css" rel="stylesheet">
+    
+</head>
+<body>
+<header class="bg-black text-blue-400 text-sm h-14 absolute w-full flex flex-row items-center justify-center border-b border-white ">
+    <nav class="flex flex-row gap-12 p-5">
+        <a href="./home.html" class="hover:text-white hover:scale-110 ease-in-out font-semibold">HOME</a>
+        <a href="./gallery.html" class="hover:text-white hover:scale-110 ease-in-out font-semibold">GALLERY</a>
+        <a href="#" class="hover:text-white hover:scale-110 ease-in-out font-semibold">TEAM</a>
+        <a href="#" class="hover:text-white hover:scale-110 ease-in-out font-semibold">ACTIVITIES</a>
+        <a href="#" class="hover:text-white hover:scale-110 ease-in-out font-semibold">CONTACT</a>
+    </nav>
+</header>
+
+<section id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed">
+    <section id="" class="h-screen border-b border-white flex flex-col justify-center items-center animate-fadeIn">
+        <!--   <img src="" alt="logo"> -->
+        <p class="text-9xl text-white tracking-widest">ENSEMBLE</p>
+        <p class="text-white font-sans text-xl">THE UNDERGRADUATE PHYSICS CLUB OF IISc</p>
+
+    </section>
+
+    <section id="About_us_container" class="bg-black h-full px-5 py-16 border-b border-white flex flex-col justify-center items-center ">
+
+        <section id="About_us" class="bg-black text-white px-8 py-16 gap-14 flex flex-row justify-around items-center w-4/5">
+            <div id="About_us_image_container" class="bg-white w-96">
+                <div class="bg-white w-full h-full"></div>
+                <img src="./img/atom.jpg" alt="" class="w-96 translate-x-6 translate-y-6 border border-white">
+
+            </div>
+            <div id="About_us_content_container" class="flex flex-col justify-center max-w-xl">
+                <P class="text-4xl font-bold mb-4 text-white font-sans text-center">ABOUT US</P>
+                <div id="About_us_content" class="text-xl text-gray-400">
+                    What is an Ensemble? In Physics, an Ensemble represents a snapshot taken of several copies of the same system, all of which are in different possible states. At the Indian Institute of Science, Ensemble is the Physics Club of enthusiastic undergraduate students at IISc with different aims and interests but with the common goal of culturing new ideas in Physics and making them available to everyone. The club is a platform for all Physics enthusiasts at IISc to come, contribute, and carry this endeavor forward!
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+    <section class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 n">
+        <p class="text-5xl mb-4 w-[75vw] text-center">Join our mailing list for updates on events and for receiving our newsletter!</p>
+        <div class="flex items-center justify-between">
+            <input type="email" placeholder="Enter your email" class="px-4 py-2 w-[60vw] border text-black border-white focus:outline-2 focus:outline-blue-600">
+            <button class="px-4 py-2 w-[15vw] text-white border border-white hover:bg-blue-800 focus:outline-none">JOIN US</button>
+        </div>
+    </section>
+</section>
+<footer class="h-[50vh] border-t border-white bg-black ">
+    <div class="flex flex-row justify-around items-center text-white h-full">
+        <img src="./img/logo.jpg" alt="" class="h-72">
+        <div id="footer_links" class="text-center">
+            <p id="footer_Institute" class="p-3 border-b border-white text-2xl">INDIAN INSTITUTE OF SCIENCE - BANGALORE</p>
+            <p id="Conatact_mail" class="text-xl p-3 mb-10">ensemble@iisc.ac.in</p>
+            <div id="Social_media_links_container">
+                <div class="grid grid-cols-2 gap-10">
+                    <a href="#" class="flex items-center justify-between w-[18vw]">
+
+                        <img src="./img/facebook_logo.png" class="w-12 h-12">
+                        <span class=" flex flex-row gap-2 items-center"> 
+                          <span class="bg-white h-2 w-2 rounded-full"></span>
+                          <p>ensemble.facebook</p>
+                       </span> 
+
+                    </a>
+                    <a href="#" class="flex items-center justify-between w-[18vw]">
+                        <img src="./img/instagram_logo.png" class="w-12 h-12">
+                       <span class=" flex flex-row gap-2 items-center"> 
+                           <span class="bg-white h-2 w-2 rounded-full"></span>
+                           <p>ensemble.instagram</p>
+                       </span> 
+                    </a>
+                    <a href="#" class="flex items-center justify-between w-[18vw]">
+                        <img src="./img/linkedIn_logo.png" class="w-12 h-12">
+                        <span class=" flex flex-row gap-2 items-center"> 
+                        <span class="bg-white h-2 w-2 rounded-full"></span>
+                        <p>ensemble.LinkedIn</p>
+                       </span> 
+
+                    </a>
+                    <a href="#" class="flex items-center justify-between w-[18vw]">
+                        <img src="./img/youtube_logo.png" class="w-12 h-12">
+                        <span class=" flex flex-row gap-2 items-center"> 
+                        <span class="bg-white h-2 w-2 rounded-full"></span>
+                        <p>ensemble.youtube</p>
+                       </span> 
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html> */
