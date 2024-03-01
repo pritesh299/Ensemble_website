@@ -46,7 +46,7 @@ Announcements.map((card) => {
     let HTMLcard = document.createElement("div");
 
     HTMLcard.innerHTML = `
-        <div class="max-w-sm ${count % 2 === 0 ? 'bg-white  border-white   ' : 'dark:bg-gray-800  dark:border-gray-700 '} border  shadow hover:scale-105   ">
+        <div class="max-w-sm ${count % 2 === 0 ? 'bg-white  border-white   ' : 'dark:bg-gray-800  dark:border-gray-700 '} border  shadow hover:scale-105 ">
             <a href="#">
                 <img class="" src="${card.imgLink}" alt="" />
             </a>
