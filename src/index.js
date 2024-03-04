@@ -2,38 +2,38 @@ import './style.css';
 
 let Announcements = [
     {
-        imgLink: "./img/atom.jpg",
-        title: "Paper presentation with Co -ordinators",
-        subContent: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        imgLink: "./img/stock.jpg",
+        title: "Paper Presentation on Quantum-based applications",
+        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
         readMoreLink: "#"
     },
     {
-        imgLink: "./img/atom.jpg",
-        title: "Paper presentation with Co -ordinators",
-        subContent: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+               imgLink: "./img/stock.jpg",
+        title: "Paper Presentation on Quantum-based applications",
+        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
         readMoreLink: "#"
     },
     {
-        imgLink: "./img/atom.jpg",
-        title: "Paper presentation with Co -ordinators",
-        subContent: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+               imgLink: "./img/stock.jpg",
+        title: "Paper Presentation on Quantum-based applications",
+        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
         readMoreLink: "#"
     },
     {
-        imgLink: "./img/atom.jpg",
-        title: "Paper presentation with Co -ordinators",
-        subContent: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+               imgLink: "./img/stock.jpg",
+        title: "Paper Presentation on Quantum-based applications",
+        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
         readMoreLink: "#"
     },
     {
-        imgLink: "./img/atom.jpg",
-        title: "Paper presentation with Co -ordinators",
-        subContent: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+               imgLink: "./img/stock.jpg",
+        title: "Paper Presentation on Quantum-based applications",
+        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
         readMoreLink: "#"
     },  {
-        imgLink: "./img/atom.jpg",
-        title: "Paper presentation with Co -ordinators",
-        subContent: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+               imgLink: "./img/stock.jpg",
+        title: "Paper Presentation on Quantum-based applications",
+        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
         readMoreLink: "#"
     },
 ];
@@ -46,11 +46,11 @@ Announcements.map((card) => {
     let HTMLcard = document.createElement("div");
 
     HTMLcard.innerHTML = `
-        <div style="transition: transform 0.2s ease-in-out" class="max-w-sm ${count % 2 === 0 ? 'bg-white  border-white   ' : 'dark:bg-gray-800  dark:border-gray-700 '} border  shadow hover:scale-105 ">
+        <div style="transition: transform 0.2s ease-in-out" class="max-w-sm ${count % 2 === 0 ? 'bg-white  border-white  ' : 'bg-black border-white '} border-y  shadow hover:scale-105 ">
             <a href="#">
                 <img class="" src="${card.imgLink}" alt="" />
             </a>
-            <div class="p-5">
+            <div class="p-5 border-y ${count % 2 === 0 ? ' border-black ' : ' border-white '}">
                 <a href="#">
                     <h6 class="mb-2 text-xl font-bold tracking-tight  ${count % 2 === 0 ? 'text-gray-900  ' : ' text-white'}">${card.title}</h6>
                 </a>
@@ -64,7 +64,6 @@ Announcements.map((card) => {
             </div>
         </div>
     `;
-  console.log(count%2,HTMLcard)
     AnnouncementsContainer.appendChild(HTMLcard);
 
     count++;
