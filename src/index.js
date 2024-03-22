@@ -38,7 +38,7 @@ let Announcements = [
     },
 ];
 
-let AnnouncementsContainer = document.getElementById("News_&_Annoucements_container");
+let AnnouncementsContainer = document.getElementById("News_and_Annoucements_container");
 console.log(AnnouncementsContainer)
 
 let count = 0;

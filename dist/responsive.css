@@ -1,0 +1,46 @@
+@media only screen and (max-width: 600px) {
+
+    nav {
+        position: relative;
+        top: -100%;
+        display: none;
+        width: 100vw;
+     
+    }
+  
+    #nav-icon {
+        display: flex; /* Display on mobile screens */
+    }
+    #About_us_container{
+        padding: 40px  20pz;
+    }
+    #About_us_image_container{
+        width: 0;
+    }
+  
+      #atom{
+        display: none;
+        width: 0;
+      }
+      #about_us_content{
+            transform: scale(0.8);
+      }
+
+      #footer_Institute,#Social_media_links_container{
+     transform: scale(0.75);
+      }
+
+      #Newsletter_container{
+           text-align: left;
+     transform: scale(0.75);
+        
+      } 
+    
+      #newsletter_form{
+        transform: scale(0.8);
+      }
+    
+  }
+
+  
+

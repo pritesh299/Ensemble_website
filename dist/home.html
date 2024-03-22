@@ -1,35 +1,45 @@
+
+
 <!DOCTYPE html>
+
 <html class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <title>Ensemble</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./responsive.css"></link>
     <link href="./output.css" rel="stylesheet">
 
   </head>
-  <body>
-    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full  flex flex-row items-center justify-center border-b border-white"> 
-       <nav class="flex flex-row gap-12 p-5">
+  <body class="">
+    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full  flex flex-row items-center justify-center border-b border-white absolute"> 
+       <nav class=" flex  flex-row gap-12 p-5">
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="home.html">HOME</a>
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="gallery.html">GALLERY</a>
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="team.html">TEAM</a>
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="activities.html">ACTIVITIES</a>
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
        </nav>
+       <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
+          <span class="border-b border-white w-[20px] border-[2px] "></span>
+          <span class="border-b border-white w-[20px] border-[2px] "></span>
+          <span class="border-b border-white w-[20px] border-[2px] "></span>
+      
+        </div>
    </header>
    
        <section id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed">
-         <section id="" class="h-screen  border-b border-white flex flex-col justify-center items-center">
-            <!--   <img src="" alt="logo"> -->
-             <p class="text-9xl text-white tracking-widest">ENSEMBLE</p>
-              <p class="text-white font-sans text-xl">THE UNDERGRADUATE PHYSICS CLUB OF IISc</p>
+         <section id="" class="h-screen   border-b border-white flex flex-col justify-center items-center">
+             <p class="text-[10vw] text-white tracking-widest ">ENSEMBLE</p>
+              <p class="text-white font-sans text-[3vw]">THE UNDERGRADUATE PHYSICS CLUB OF IISc</p>
  
          </section>
     
-         <section id="About_us_container" class="bg-black h-full border-b border-white flex justify-around items-center">
+         <section id="About_us_container" class="bg-black h-full border-b border-white flex justify-around items-center ">
             
     
               <div id="About_us_image_container" class="bg-black w-96">
-                 <div class="bg-black  h-full"></div>
+               
                 
                  <div id="atom" class="relative w-[600px] h-[600px]">
         
@@ -51,7 +61,7 @@
                   
               </div>
         
-              <div class="about-content w-[500px] flex flex-col items-center justify-center">
+              <div  id="about_us_content" class="about-content w-[500px] flex flex-col items-center justify-center">
                 <div class="text-4xl font-bold mb-4 text-white  font-sans text-center">About Us</div>
                 <p class="text-xl  text-gray-400  ">
                     What is an Ensemble? In Physics, an Ensemble represents a snapshot taken of several copies of the same system, all of which are in different possible states. At the Indian Institute of Science, Ensemble is the Physics Club of enthusiastic undergraduate students at IISc with different aims and interests but with the common goal of culturing new ideas in Physics and making them available to everyone. The club is a platform for all Physics enthusiasts at IISc to come, contribute, and carry this endeavor forward!
@@ -62,16 +72,16 @@
               </div>
       </section>
  
-         <section id="News_&amp;_Annoucements" class="">
+         <section id="News_and_Annoucements" class="">
              <p class="text-4xl font-bold mb-4 text-white  py-8 font-sans text-center mt-8">News and Announcements</p>
-             <div id="News_&amp;_Annoucements_container" class="grid grid-cols-1 md:grid-cols-3 gap-6 px-20 py-8"></div>
+             <div id="News_and_Annoucements_container" class="grid grid-cols-1 md:grid-cols-3 gap-6 px-20 py-8"></div>
          </section>
         
-    <section class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 n">
-        <p class="text-5xl mb-4 w-[75vw] text-center">Join our mailing list for updates on events and for receiving our newsletter!</p>
-        <div class="flex items-center justify-between">
-            <input type="email" placeholder="Enter your email" class="px-4 py-2 w-[60vw] border text-black border-white focus:outline-2 focus:outline-blue-600">
-            <button class="px-4 py-2 w-[15vw] text-white border border-white hover:bg-blue-800 focus:outline-none">JOIN US</button>
+    <section id="Newsletter_container" class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 n">
+        <p id="NewsLetter_Head" class="text-5xl mb-4 w-[75vw] ">Join our mailing list for updates on events and for receiving our newsletter!</p>
+        <div id="newsletter_form" class="flex items-center justify-between">
+            <input type="email" placeholder="Enter your email" class="px-4 py-2 w-[60vw] h-[50px] border text-black border-white focus:outline-2 focus:outline-blue-600">
+            <button class=" w-[15vw] text-white border border-white hover:bg-blue-800 h-[50px] text-[1.5vw]  focus:outline-none">JOIN US</button>
         </div>
     </section>
  
@@ -137,14 +147,13 @@
  
  
 </body>
-</html>
+</html> 
 
 
 
 
+<!-- code for home page white mode -->
 <!-- 
-
-code for home page white mode
 <!DOCTYPE html>
 <html class="scroll-smooth">
 <head>
@@ -283,4 +292,5 @@ code for home page white mode
  
  
 </body>
-</html> -->
+</html> 
+ -->
