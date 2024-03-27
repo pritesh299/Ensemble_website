@@ -21,6 +21,7 @@
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
        </nav>
        <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
+
           <span class="border-b border-white w-[20px] border-[2px] "></span>
           <span class="border-b border-white w-[20px] border-[2px] "></span>
           <span class="border-b border-white w-[20px] border-[2px] "></span>
@@ -28,7 +29,18 @@
         </div>
    </header>
    
-       <section id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed">
+    <div class="mobile_nav hidden h-screen w-screen bg-black pt-[50px] text-white flex flex-col justify-center items-center text-center transition ease-in-out">
+        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5 " href="home.html">HOME</a>
+        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="gallery.html">GALLERY</a>
+        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="team.html">TEAM</a>
+        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="activities.html">ACTIVITIES</a>
+        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="contact.html">CONTACT</a>
+
+    </div>
+
+
+
+       <section id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed py-8">
          <section id="" class="h-screen   border-b border-white flex flex-col justify-center items-center">
              <p class="text-[10vw] text-white tracking-widest ">ENSEMBLE</p>
               <p class="text-white font-sans text-[3vw]">THE UNDERGRADUATE PHYSICS CLUB OF IISc</p>
@@ -76,25 +88,20 @@
              <p class="text-4xl font-bold mb-4 text-white  py-8 font-sans text-center mt-8">News and Announcements</p>
              <div id="News_and_Annoucements_container" class="grid grid-cols-1 md:grid-cols-3 gap-6 px-20 py-8"></div>
          </section>
-        
-    <section id="Newsletter_container" class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 n">
-        <p id="NewsLetter_Head" class="text-5xl mb-4 w-[75vw] ">Join our mailing list for updates on events and for receiving our newsletter!</p>
-        <div id="newsletter_form" class="flex items-center justify-between">
-            <input type="email" placeholder="Enter your email" class="px-4 py-2 w-[60vw] h-[50px] border text-black border-white focus:outline-2 focus:outline-blue-600">
-            <button class=" w-[15vw] text-white border border-white hover:bg-blue-800 h-[50px] text-[1.5vw]  focus:outline-none">JOIN US</button>
-        </div>
-    </section>
+      
  
- 
+         <section id="Newsletter_container" class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 n">
+            <p id="NewsLetter_Head" class="text-5xl mb-4 w-[75vw] ">Join our mailing list for updates on events and for receiving our newsletter!</p>
+            <div id="newsletter_form" class="flex items-center justify-between"  method="POST"  action="https://script.google.com/macros/s/AKfycbyTkfPW0vKoE0CWdJ0nG7PETCZiX1GNYoUCN6lD_PmMOqVZ_6gfDhPX19sMv9fk-5Qpog/exec">
+                <input type="email" placeholder="Enter your email" class="px-4 py-2 w-[60vw] h-[50px] border text-black border-white focus:outline-2 focus:outline-blue-600">
+                <button class=" w-[15vw] text-white border border-white hover:bg-blue-800 h-[50px] text-[1.5vw]  focus:outline-none">JOIN US</button>
+            </div>
+        </section>
        </section>
-  
- 
- 
- 
  
        <footer class="h-[50vh] border-t border-white bg-black ">
      <div class="flex flex-row justify-around items-center text-white h-full">
-         <img src="./img/ii.jpg" alt="" class="h-72">
+         <img src="./img/iisc white.png" alt="" class=" footer_img h-72">
          <div id="footer_links" class="text-center">
              <p id="footer_Institute" class="p-3 border-b border-white text-2xl">INDIAN INSTITUTE OF SCIENCE - BANGALORE</p>
              <p id="Conatact_mail" class="text-xl p-3 mb-10">ensemble@iisc.ac.in</p>
@@ -105,7 +112,7 @@
                          <img src="./img/facebook_logo.png" class="w-12 h-12">
                          <span class=" flex flex-row gap-2 items-center"> 
                            <span class="bg-white h-2 w-2 rounded-full"></span>
-                           <p>ensemble.facebook</p>
+                           <p>ensemble.facebook</p> 
                         </span> 
  
                      </a>

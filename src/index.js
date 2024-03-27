@@ -1,5 +1,32 @@
 import './style.css';
 
+const navIcon = document.getElementById('nav-icon');
+const mobileNav = document.querySelector('.mobile_nav');
+
+navIcon.addEventListener('click', () => {
+  mobileNav.classList.toggle('hidden');
+});
+
+/* const scriptURL="https://script.google.com/macros/s/AKfycbyTkfPW0vKoE0CWdJ0nG7PETCZiX1GNYoUCN6lD_PmMOqVZ_6gfDhPX19sMv9fk-5Qpog/exec"
+
+const form=document.getElementById("newsletter_form")
+  console.log(form)
+form.addEventListener("submit",(e)=>{
+   e.preventDefault()
+   fetch(scriptURL,{method:"POST", body: new FormData(form)})
+  .then(Response=>alert("YOUR EMAIL HAS BEEEN SUBMITTED SUCESSFULLY"))
+  .then(()=>{window.location.reload()})
+  .catch(error=>console.error("error",error.message))
+
+})
+ */
+function setCurrentDateTime() {
+    var now = new Date();
+    var dateTimeString = now.toISOString(); // Format: YYYY-MM-DDTHH:MM:SSZ
+    document.getElementById("datetime").value = dateTimeString;
+  }
+console.log("lol")
+
 let Announcements = [
     {
         imgLink: "./img/stock.jpg",
@@ -12,30 +39,7 @@ let Announcements = [
         title: "Paper Presentation on Quantum-based applications",
         subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
         readMoreLink: "#"
-    },
-    {
-               imgLink: "./img/stock.jpg",
-        title: "Paper Presentation on Quantum-based applications",
-        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
-        readMoreLink: "#"
-    },
-    {
-               imgLink: "./img/stock.jpg",
-        title: "Paper Presentation on Quantum-based applications",
-        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
-        readMoreLink: "#"
-    },
-    {
-               imgLink: "./img/stock.jpg",
-        title: "Paper Presentation on Quantum-based applications",
-        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
-        readMoreLink: "#"
-    },  {
-               imgLink: "./img/stock.jpg",
-        title: "Paper Presentation on Quantum-based applications",
-        subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
-        readMoreLink: "#"
-    },
+    }
 ];
 
 let AnnouncementsContainer = document.getElementById("News_and_Annoucements_container");
@@ -69,9 +73,43 @@ Announcements.map((card) => {
     count++;
 });
 
+/* document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelectorAll('[data-carousel="slide"]');
+    const items = carousel.querySelectorAllAll('[data-carousel-item]');
+    const prevButton = carousel.querySelectorAll('[data-carousel-prev]');
+    const nextButton = carousel.querySelectorAll('[data-carousel-next]');
+    let currentIndex = 0;
 
+    // Function to show the current slide
+    const showSlide = (index) => {
+        items.forEach((item, i) => {
+            if (i === index) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+    };
 
+    // Function to move to the next slide
+    const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % items.length;
+        showSlide(currentIndex);
+    };
 
+    // Function to move to the previous slide
+    const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showSlide(currentIndex);
+    };
 
+    // Event listeners for next and previous buttons
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+
+ 
+    // Show the initial slide
+    showSlide(currentIndex);
+}); */
 
 
