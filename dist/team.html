@@ -11,12 +11,20 @@
 
   </head>
   <body class="">
-    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full  flex flex-row items-center justify-center border-b border-white absolute"> 
+    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full overflow-visible flex flex-row items-center justify-center border-b border-white "> 
        <nav class=" flex  flex-row gap-12 p-5">
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="home.html">HOME</a>
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="gallery.html">GALLERY</a>
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="team.html">TEAM</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="activities.html">ACTIVITIES</a>
+          <div id="activities_nav" class="relative  "> 
+            <a  class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="activities.html">ACTIVITIES</a>
+              <div id="activities_show" class="hidden absolute flex flex-col bg-black p-4 w-[200px] border border-white translate-x-[-50px]">
+                
+              <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="team.html">Talk and Resources</a>
+              <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="team.html">Schedule of upcoming events</a>
+            
+           </div>
+        </div>
            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
        </nav>
        <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
@@ -40,7 +48,10 @@
 
     <section  id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed py-8">
 
-
+      
+        <section style="background-image: url();" class="h-screen flex justify-center items-center">
+                         <h2 class="text-white text-5xl font-semibold">OUR TEAM</h2>
+        </section>
         <section id="current_co_card_container_desktop" class="h-screen py-16"> 
             <p class="text-center text-white text-5xl p-6 font-semibold"> Current Co-ordinators</p>
 
@@ -86,21 +97,22 @@
           
      
 
-        <section id="past_co_card_container_desktop" class="h-screen py-16"> 
+        <section id="past_co_card_container_desktop" class="py-16"> 
             <p class="text-center text-white text-5xl p-6 font-semibold"> Past Co-ordinators</p>
 
         <div class="flex justify-center items-center py-8">
-            <div class="h-[70vh] w-[80vw] grid grid-cols-2 gap-10">
+            <div class=" w-[80vw] grid grid-cols-2 gap-10">
         
                 <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border border-2 border-black w-96 justify-self-center">
                     <div class="relative overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border h-80">
-                        <img src="img/nisarg.jpeg" alt="profile-picture" class="w-full" />
+                        <img src="img/20221.webp" alt="profile-picture" class="w-full" />
                     </div>
                     <div class="p-6 text-center border-y border-black">
                         <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                             Nisarg Chadha
                         </h4>
                         <p class="block font-sans text-base antialiased font-medium leading-relaxed bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400">
+                            2022-2023 Coordinator<br>
                             I'm a Physics enthusiast interested in Condensed Matter Physics. I'm also into sports and music.
                         </p>
                     </div>
@@ -111,18 +123,96 @@
                 
                 <div class="relative flex flex-col  text-gray-700 bg-black shadow-md bg-clip-border border-2 border-white w-96 justify-self-center">
                     <div class="relative overflow-hidden text-gray-700 bg-black shadow-lg bg-clip-border h-80">
-                        <img src="img/nisarg.jpeg" alt="profile-picture" class="w-full" />
+                        <img src="img/20222.webp" alt="profile-picture" class="w-full" />
                     </div>
                     <div class="p-6 text-center border-y border-white">
                         <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-white">
-                            Nisarg Chadha
+                            Gurkirat Singh
                         </h4>
                         <p class="block font-sans text-base antialiased font-medium leading-relaxed text-white">
-                            I'm a Physics enthusiast interested in Condensed Matter Physics. I'm also into sports and music.
+                            2022-2023 Coordinator<br>
+                            The Universe has a wonderful sense of humour, the trick is how to take a joke.
                         </p>
                     </div>
                     <div class="flex justify-center text-white p-6 pt-2 gap-7">
                         <p>email@iisc.ac.in</p>
+                    </div>
+                </div>
+            
+                
+                <div class="relative flex flex-col  text-gray-700 bg-black shadow-md bg-clip-border border-2 border-white w-96 justify-self-center">
+                    <div class="relative overflow-hidden text-gray-700 bg-black shadow-lg bg-clip-border h-[25rem]">
+                        <img src="img/20212.webp" alt="profile-picture" class="w-full" />
+                    </div>
+                    <div class="p-6 text-center border-y border-white">
+                        <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-white">
+                                             
+
+                            Suhas Sheikh
+                        </h4>
+                        <p class="block font-sans text-base antialiased font-medium leading-relaxed text-white">
+                           2020-2021 Co-ordinator
+                        </p>
+                    </div>
+                    <div class="flex justify-center text-white p-6 pt-2 gap-7">
+                        <p>suhassheikh@iisc.ac.in
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border border-2 border-black w-96 justify-self-center">
+                    <div class="relative overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border h-[25rem]">
+                        <img src="img/20211.jpeg" alt="profile-picture" class="w-full translate-y-[-30px]" />
+                    </div>
+                    <div class="p-6 text-center border-y border-black">
+                        <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            Soumyadeep Bhattacharjee
+                        </h4>
+                        <p class="block font-sans text-base antialiased font-medium leading-relaxed bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400">
+                            2020-2021 Co-ordinator
+                        </p>
+                    </div>
+                    <div class="flex justify-center p-6 pt-2 gap-7">
+                        <p>bsoumyadeep@iisc.ac.in</p>
+
+                    </div>
+                </div>
+                
+
+
+                <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border border-2 border-black w-96 justify-self-center">
+                    <div class="relative overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border h-[25rem]">
+                        <img src="img/20201.webp" alt="profile-picture" class="w-full translate-y-[-30px]" />
+                    </div>
+                    <div class="p-6 text-center border-y border-black">
+                        <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            Abhilash Mukherjee
+                        </h4>
+                        <p class="block font-sans text-base antialiased font-medium leading-relaxed bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400">
+                            (2019-20 Co-ordinator)
+                        </p>
+                    </div>
+                    <div class="flex justify-center p-6 pt-2 gap-7">
+                        <p>mabhilash@iisc.ac.in</p>
+
+                    </div>
+                </div>
+                
+                <div class="relative flex flex-col  text-gray-700 bg-black shadow-md bg-clip-border border-2 border-white w-96 justify-self-center">
+                    <div class="relative overflow-hidden text-gray-700 bg-black shadow-lg bg-clip-border h-[25rem]">
+                        <img src="img/20202.webp" alt="profile-picture" class="w-full" />
+                    </div>
+                    <div class="p-6 text-center border-y border-white">
+                        <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-white">
+                                             Samarth Hawaldar
+                        </h4>
+                        <p class="block font-sans text-base antialiased font-medium leading-relaxed text-white">
+                           2019-2020 Co-ordinator
+                        </p>
+                    </div>
+                    <div class="flex justify-center text-white p-6 pt-2 gap-7">
+                        <p>samarthh@iisc.ac.in</p>
                     </div>
                 </div>
             

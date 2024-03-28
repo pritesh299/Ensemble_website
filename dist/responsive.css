@@ -110,3 +110,11 @@
 header{
   overflow: hidden;
 }
+
+.news_content{
+   height: 230px;       
+}
+
+.News_content_button{
+  width: 100px;
+}

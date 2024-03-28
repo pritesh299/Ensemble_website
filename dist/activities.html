@@ -11,31 +11,39 @@
 
   </head>
   <body class="">
-    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full  flex flex-row items-center justify-center border-b border-white absolute"> 
-       <nav class=" flex  flex-row gap-12 p-5">
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="home.html">HOME</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="gallery.html">GALLERY</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="team.html">TEAM</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="activities.html">ACTIVITIES</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
-       </nav>
-       <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
-
-          <span class="border-b border-white w-[20px] border-[2px] "></span>
-          <span class="border-b border-white w-[20px] border-[2px] "></span>
-          <span class="border-b border-white w-[20px] border-[2px] "></span>
-      
-        </div>
-   </header>
-   
-    <div class="mobile_nav hidden h-screen w-screen bg-black pt-[50px] text-white flex flex-col justify-center items-center text-center transition ease-in-out">
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5 " href="home.html">HOME</a>
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="gallery.html">GALLERY</a>
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="team.html">TEAM</a>
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="activities.html">ACTIVITIES</a>
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="contact.html">CONTACT</a>
-
-    </div>
+    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full overflow-visible flex flex-row items-center justify-center border-b border-white "> 
+        <nav class=" flex  flex-row gap-12 p-5">
+            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="home.html">HOME</a>
+            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="gallery.html">GALLERY</a>
+            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="team.html">TEAM</a>
+           <div id="activities_nav" class="relative  "> 
+             <a  class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="activities.html">ACTIVITIES</a>
+               <div id="activities_show" class="hidden absolute flex flex-col bg-black p-4 w-[200px] border border-white translate-x-[-50px]">
+                 
+               <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="team.html">Talk and Resources</a>
+               <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="team.html">Schedule of upcoming events</a>
+             
+            </div>
+         </div>
+            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
+        </nav>
+        <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
+ 
+           <span class="border-b border-white w-[20px] border-[2px] "></span>
+           <span class="border-b border-white w-[20px] border-[2px] "></span>
+           <span class="border-b border-white w-[20px] border-[2px] "></span>
+       
+         </div>
+    </header>
+    
+     <div class="mobile_nav hidden h-screen w-screen bg-black pt-[50px] text-white flex flex-col justify-center items-center text-center transition ease-in-out">
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5 " href="home.html">HOME</a>
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="gallery.html">GALLERY</a>
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="team.html">TEAM</a>
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="activities.html">ACTIVITIES</a>
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="contact.html">CONTACT</a>
+ 
+     </div>
     
 
     <section  id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed py-8">

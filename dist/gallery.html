@@ -11,31 +11,39 @@
 
   </head>
   <body class="">
-    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full  flex flex-row items-center justify-center border-b border-white absolute"> 
-       <nav class=" flex  flex-row gap-12 p-5">
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="home.html">HOME</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="gallery.html">GALLERY</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="team.html">TEAM</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="activities.html">ACTIVITIES</a>
-           <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
-       </nav>
-       <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
-
-          <span class="border-b border-white w-[20px] border-[2px] "></span>
-          <span class="border-b border-white w-[20px] border-[2px] "></span>
-          <span class="border-b border-white w-[20px] border-[2px] "></span>
-      
-        </div>
-   </header>
-   
-    <div class="mobile_nav hidden h-screen w-screen bg-black pt-[50px] text-white flex flex-col justify-center items-center text-center transition ease-in-out">
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5 " href="home.html">HOME</a>
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="gallery.html">GALLERY</a>
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="team.html">TEAM</a>
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="activities.html">ACTIVITIES</a>
-        <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="contact.html">CONTACT</a>
-
-    </div>
+    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full overflow-visible flex flex-row items-center justify-center border-b border-white "> 
+        <nav class=" flex  flex-row gap-12 p-5">
+            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="home.html">HOME</a>
+            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="gallery.html">GALLERY</a>
+            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="team.html">TEAM</a>
+           <div id="activities_nav" class="relative  "> 
+             <a  class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="activities.html">ACTIVITIES</a>
+               <div id="activities_show" class="hidden absolute flex flex-col bg-black p-4 w-[200px] border border-white translate-x-[-50px]">
+                 
+               <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="team.html">Talk and Resources</a>
+               <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="team.html">Schedule of upcoming events</a>
+             
+            </div>
+         </div>
+            <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
+        </nav>
+        <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
+ 
+           <span class="border-b border-white w-[20px] border-[2px] "></span>
+           <span class="border-b border-white w-[20px] border-[2px] "></span>
+           <span class="border-b border-white w-[20px] border-[2px] "></span>
+       
+         </div>
+    </header>
+    
+     <div class="mobile_nav hidden h-screen w-screen bg-black pt-[50px] text-white flex flex-col justify-center items-center text-center transition ease-in-out">
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5 " href="home.html">HOME</a>
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="gallery.html">GALLERY</a>
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="team.html">TEAM</a>
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="activities.html">ACTIVITIES</a>
+         <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="contact.html">CONTACT</a>
+ 
+     </div>
     
 <section  id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed py-8">
    
@@ -92,7 +100,7 @@
           </div>
         </div>
    
-        <div id="slide_show_mobile" class=" pt-20 [60vw] flex items-center justify-center ">
+        <div id="slide_show_mobile" class="hidden pt-20 [60vw] flex items-center justify-center ">
             <div class="  bg-black px-8 pt-4 pb-[20px] w-[80vw] h-[70vh] border-t border-white overflow-hidden flex flex-col items-center border-y border-white">
                 <p class="text-white text-4xl p-6 font-medium">1.Title</p>
                  <div class="flex w-[80vw] justify-center px-2">
@@ -207,7 +215,7 @@
         </div>
     </section>
 
-    <section class="slide_show_mobile">
+    <section class="slide_show_mobile hidden">
         <div class=" py-8 flex items-center justify-center">
             <div class="bg-white px-8 pt-4 pb-16 w-[80vw] border-y border-black overflow-hidden flex flex-col items-center border-y border-gray-700">
                 <p class="text-gray-700 text-4xl p-6 font-medium">1.Title</p>
@@ -267,14 +275,12 @@
 
        
       
-         
-    <section id="Newsletter_container" class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 ">
-        <p id="NewsLetter_Head" class="text-4xl font-semibold mb-4 w-[90vw] ">Join our mailing list for updates on events and for receiving our newsletter!</p>
-        <form id="newsletter_form" class="flex items-center justify-between"   method="POST"  action="https://script.google.com/macros/s/AKfycbyTkfPW0vKoE0CWdJ0nG7PETCZiX1GNYoUCN6lD_PmMOqVZ_6gfDhPX19sMv9fk-5Qpog/exec">
-            <input type="email" placeholder="Enter your email" name="Email_for_newsletter" class="px-4 py-2 w-[90vw] h-[60px] border text-black border-white focus:outline-2 focus:outline-blue-600">
-            <input type="hidden" id="datetime" name="datetime">
-            <button type="submit" class=" w-[20vw] text-white border border-white hover:bg-blue-800 h-[60px] text-[3vw]  focus:outline-none">JOIN US</button>
-        </form>
+    <section id="Newsletter_container" class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 n">
+        <p id="NewsLetter_Head" class="text-5xl mb-4 w-[75vw] ">Join our mailing list for updates on events and for receiving our newsletter!</p>
+        <div id="newsletter_form" class="flex items-center justify-between"  method="POST"  action="https://script.google.com/macros/s/AKfycbyTkfPW0vKoE0CWdJ0nG7PETCZiX1GNYoUCN6lD_PmMOqVZ_6gfDhPX19sMv9fk-5Qpog/exec">
+            <input type="email" placeholder="Enter your email" class="px-4 py-2 w-[60vw] h-[50px] border text-black border-white focus:outline-2 focus:outline-blue-600">
+            <button class=" w-[15vw] text-white border border-white hover:bg-blue-800 h-[50px] text-[1.5vw]  focus:outline-none">JOIN US</button>
+        </div>
     </section>
    </section>
 
