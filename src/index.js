@@ -66,9 +66,10 @@ console.log(AnnouncementsContainer)
 let count = 0;
 Announcements.map((card) => {
     let HTMLcard = document.createElement("div");
-
+    if(AnnouncementsContainer===null){}
+else{
     HTMLcard.innerHTML = `
-        <div style="transition: transform 0.2s ease-in-out" class="max-w-sm ${count % 2 === 0 ? 'bg-white  border-white  ' : 'bg-black border-white '} border-y  shadow hover:scale-105 ">
+        <div style="  transition: transform 0.2s ease-in-out" class=" news_card max-w-sm ${count % 2 === 0 ? 'bg-white  border-white  ' : 'bg-black border-white '} border-y  shadow hover:scale-105 ">
             <div href="#" style="background-image: url(${card.imgLink});" class="h-[400px] bg-cover  ">
             </div >
             <div class="p-5 news_content flex flex-col justify-around border-y ${count % 2 === 0 ? ' border-black ' : ' border-white '}">
@@ -88,45 +89,39 @@ Announcements.map((card) => {
     AnnouncementsContainer.appendChild(HTMLcard);
 
     count++;
+}
 });
 
-/* document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.querySelectorAll('[data-carousel="slide"]');
-    const items = carousel.querySelectorAllAll('[data-carousel-item]');
-    const prevButton = carousel.querySelectorAll('[data-carousel-prev]');
-    const nextButton = carousel.querySelectorAll('[data-carousel-next]');
-    let currentIndex = 0;
+const G_1_carousel = document.getElementById('gallery_1');
+const G_1_carouselItems = G_1_carousel.querySelectorAll('.G_1_item'); // Use querySelectorAll instead of getElementsByClassName
+const G_1_prevButton = G_1_carousel.querySelector('#G_1_prev'); // Fix typo: Remove the extra ']' and use querySelector instead of getElementById
+const G_1_nextButton = G_1_carousel.querySelector('#G_1_next'); // Fix typo: Remove the extra ']' and use querySelector instead of getElementById
+let currentIndex = 0;
 
-    // Function to show the current slide
-    const showSlide = (index) => {
-        items.forEach((item, i) => {
-            if (i === index) {
-                item.classList.remove('hidden');
-            } else {
-                item.classList.add('hidden');
-            }
-        });
-    };
+const showItem = index => {
+    G_1_carouselItems.forEach((item, i) => {
+        if (i === index) {
+            item.classList.add('block');
+            item.classList.remove('hidden');
+        } else {
+            item.classList.remove('block');
+            item.classList.add('hidden');
+        }
+    });
+};
 
-    // Function to move to the next slide
-    const nextSlide = () => {
-        currentIndex = (currentIndex + 1) % items.length;
-        showSlide(currentIndex);
-    };
+const showNext = () => {
+    currentIndex = (currentIndex + 1) % G_1_carouselItems.length;
+    showItem(currentIndex);
+};
 
-    // Function to move to the previous slide
-    const prevSlide = () => {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showSlide(currentIndex);
-    };
+const showPrev = () => {
+    currentIndex = (currentIndex - 1 + G_1_carouselItems.length) % G_1_carouselItems.length;
+    showItem(currentIndex);
+};
 
-    // Event listeners for next and previous buttons
-    nextButton.addEventListener('click', nextSlide);
-    prevButton.addEventListener('click', prevSlide);
+G_1_prevButton.addEventListener('click', showPrev);
+G_1_nextButton.addEventListener('click', showNext);
 
- 
-    // Show the initial slide
-    showSlide(currentIndex);
-}); */
-
-
+// Start with the first item displayed
+showItem(currentIndex);
