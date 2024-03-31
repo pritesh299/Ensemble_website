@@ -52,7 +52,7 @@
    
       #Contact_container{
         width: 90vw;
-  justify-content: center;
+       justify-content: center;
       }
 
       #contact_form_container{
@@ -72,7 +72,7 @@
     #slide_show_desktop{
       display: none;
     }
-#slide_show_mobile{
+    #slide_show_mobile{
       display: flex;
     /*       transform: scale(0.75);
       width: 90vw; */
@@ -114,6 +114,19 @@
 
       #header{
         overflow: hidden;
+      }
+
+      #nav{
+        display: none;
+      }
+      #header{
+        justify-content: space-between;
+      }
+      #contact_img{
+        display: none;
+      }
+      #team_img_desktop{
+        display: none;
       }
     }
 

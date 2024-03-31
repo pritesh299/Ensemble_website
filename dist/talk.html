@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html class="scroll-smooth">
@@ -8,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./responsive.css"></link>
     <link href="./output.css" rel="stylesheet">
-
+    <link rel="icon" href=
+"./img/croped logo-removebg.png"
+          type="image/x-icon">
+ 
   </head>
   <body class="">
-    <header class="bg-black text-blue-400 text-sm h-14 absolute w-full overflow-visible flex flex-row items-center justify-center border-b border-white "> 
-        <nav class=" flex  flex-row gap-12 p-5">
+    <header id="header" class="bg-black text-blue-400 text-sm h-14 absolute w-full flex flex-row items-center justify-between px-8 border-b border-white  overflow-visible"> 
+   <div class="text-2xl text-white font-semibold">ENSEMBLE</div>
+
+        <nav id="nav" class=" flex  flex-row gap-12 p-5">
             <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="home.html">HOME</a>
             <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="gallery.html">GALLERY</a>
             <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="team.html">TEAM</a>
@@ -22,12 +26,14 @@
                  
                <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="talk.html">Talk and Resources</a>
                <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="schedule.html">Schedule of upcoming events</a>
+               <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="lecture.html">Lecture series 2024 </a>
              
             </div>
          </div>
             <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
         </nav>
-        <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
+
+        <div  id="nav-icon" class="w-[20px] hidden  flex-col gap-[0.25rem] relative ">
  
            <span class="border-b border-white w-[20px] border-[2px] "></span>
            <span class="border-b border-white w-[20px] border-[2px] "></span>
@@ -44,7 +50,8 @@
          <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="contact.html">CONTACT</a>
  
      </div>
-    
+
+     
 
     <section  id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed py-8">
 
@@ -54,6 +61,33 @@
                 <p class="text-white text-5xl text-center p-8 font-semibold" >Talks and Resources</p>
         
                 <div class="activities-list   text-white p-8 pb-4 w-[80vw]">
+
+                    
+                    
+                    <div class="activity mb-8">
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">Ensemble 2024 Lecture series </h2>
+                        <p class="text-lg md:text-xl mb-4">
+                         
+                        </p>
+                        <ul>
+                            <li>   <span class="bg-white h-2 w-2 rounded-full inline-block mr-2"></span>
+                                Introduction to Cosmology - Aritra Das (3rd year UG).
+                                <a href="https://youtu.be/a4loz-22kZw" class="text-blue-500 hover:underline">Link to the video lecture</a>,
+                                <a href="https://drive.google.com/file/d/1rd_ekhsTtFg1-F2tOkKRsEksAOqV28v_/view?usp=sharing" class="text-blue-500 hover:underline">Link to the slides used for presentation</a>.
+                            </li>
+                            <li>   <span class="bg-white h-2 w-2 rounded-full inline-block mr-2"></span>
+                                Introduction to Stellar Structure - Yash Mehta (4th year UG).
+                                <a href="https://youtu.be/WG92axnVqtw" class="text-blue-500 hover:underline">Link to the video lecture</a>,
+                                <a href="https://drive.google.com/file/d/1MspphPj5YkuQDYmOg-DrPp3pK_MutIbP/view?usp=sharing" class="text-blue-500 hover:underline">Link to the slides used for presentation</a>.
+                            </li>
+                            <li>   <span class="bg-white h-2 w-2 rounded-full inline-block mr-2"></span>
+                                Astrophysical Medium - Hitesh Kishore Das (5th year Bsc-MSc).
+                                <a href="https://drive.google.com/file/d/188FzvEBaue2lYRB5cSXZJdWjZeC89yTY/view?usp=sharing" class="text-blue-500 hover:underline">Link to slides for presentation</a>,
+                                <a href="https://51064ec8-99cf-43e7-a757-54d21bdcb0f0.filesusr.com/ugd/ff1d05_de56fc7f2df7496a88b89fb33e102c7f.pdf" class="text-blue-500 hover:underline">Link to a review paper on the topic</a>.
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="activity mb-8">
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">Ensemble Newsletters</h2>
                         <p class="text-lg md:text-xl mb-4">
@@ -157,6 +191,7 @@
                             Explore our diverse talk series covering a wide range of fascinating topics in physics.
                         </p>
                         <ul>
+                          
                             <li> 
                                 <span class="bg-white h-2 w-2 rounded-full inline-block mr-2"></span>
                                 Introduction to Condensed Matter Physics - Archisman Panigrahi (4th year UG).
@@ -225,7 +260,14 @@
                     <div class="text-center text-2xl m-2">
                         Check the upcoming talks in our <a href="schedule.html" class="text-blue-500 hover:underline">"Schedule of Upcoming Events"</a> page.
                     </div >
-                   
+                    div class="activity mb-8">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 ">Also check out</h2>
+                    <ul>
+                        <li><a class="text-blue-500 hover:underline text-xl" href="talk.html">Talk and Resources</a></li>
+                        <li><a class="text-blue-500 hover:underline text-xl" href="schedule.html">Schedule of upcoming events</a></li>
+                        <li><a class="text-blue-500 hover:underline text-xl" href="lecture.html">Lecture series 2024 </a></li>
+                    </ul>
+                </div>
                     
                     
                 
@@ -235,10 +277,10 @@
         
         <section id="Newsletter_container" class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 n">
             <p id="NewsLetter_Head" class="text-5xl mb-4 w-[75vw] ">Join our mailing list for updates on events and for receiving our newsletter!</p>
-            <div id="newsletter_form" class="flex items-center justify-between"  method="POST"  action="https://script.google.com/macros/s/AKfycbyTkfPW0vKoE0CWdJ0nG7PETCZiX1GNYoUCN6lD_PmMOqVZ_6gfDhPX19sMv9fk-5Qpog/exec">
-                <input type="email" placeholder="Enter your email" class="px-4 py-2 w-[60vw] h-[50px] border text-black border-white focus:outline-2 focus:outline-blue-600">
-                <button class=" w-[15vw] text-white border border-white hover:bg-blue-800 h-[50px] text-[1.5vw]  focus:outline-none">JOIN US</button>
-            </div>
+            <form id="newsletter_form" class="flex items-center justify-between"  method="POST" action="https://script.google.com/macros/s/AKfycbwyp1XfGOxn_SnPrTdRwyn2JoWxqadV00YryjxlhmRLyYNLpkcEGzzhHUFmf019_KYl0w/exec">
+                <input type="email" placeholder="Enter your email" name="Email_for_newsletter" class="px-4 py-2 w-[60vw] h-[50px] border text-black border-white focus:outline-2 focus:outline-blue-600">
+                <button type="submit" class=" w-[15vw] text-white border border-white hover:bg-blue-800 h-[50px] text-[1.5vw]  focus:outline-none">JOIN US</button>
+            </from>
         </section>
 
 
@@ -263,7 +305,7 @@
                        </span> 
 
                     </a>
-                    <a href="#" class="flex items-center justify-between w-[18vw]">
+                    <a href="https://www.instagram.com/ensemble.iisc/?hl=en" class="flex items-center justify-between w-[18vw]">
                         <img src="./img/instagram_logo.png" class="w-12 h-12">
                        <span class=" flex flex-row gap-2 items-center"> 
                            <span class="bg-white h-2 w-2 rounded-full"></span>

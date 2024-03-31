@@ -9,11 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./responsive.css"></link>
     <link href="./output.css" rel="stylesheet">
-
+    <link rel="icon" href=
+"./img/croped logo-removebg.png"
+          type="image/x-icon">
+ 
   </head>
   <body class="">
-    <header id="header" class="bg-black text-blue-400 text-sm h-14 absolute w-full flex flex-row items-center justify-center border-b border-white  overflow-visible"> 
-        <nav class=" flex  flex-row gap-12 p-5">
+    <header id="header" class="bg-black text-blue-400 text-sm h-14 absolute w-full flex flex-row items-center justify-between px-8 border-b border-white  overflow-visible"> 
+   <div class="text-2xl text-white font-semibold">ENSEMBLE</div>
+
+        <nav id="nav" class=" flex  flex-row gap-12 p-5">
             <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="home.html">HOME</a>
             <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="gallery.html">GALLERY</a>
             <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="team.html">TEAM</a>
@@ -23,12 +28,14 @@
                  
                <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="talk.html">Talk and Resources</a>
                <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="schedule.html">Schedule of upcoming events</a>
+               <a class="hover:text-white hover:scale-110 ease-in-out font-semibold p-2 ease-in-out" href="lecture.html">Lecture series 2024 </a>
              
             </div>
          </div>
             <a class="hover:text-white hover:scale-110 ease-in-out font-semibold" href="contact.html">CONTACT</a>
         </nav>
-        <div  id="nav-icon" class="w-[40px] hidden  flex-col gap-[0.25rem] relative mr-[2rem]">
+
+        <div  id="nav-icon" class="w-[20px] hidden  flex-col gap-[0.25rem] relative ">
  
            <span class="border-b border-white w-[20px] border-[2px] "></span>
            <span class="border-b border-white w-[20px] border-[2px] "></span>
@@ -45,14 +52,12 @@
          <a class="hover:text-white hover:scale-110 ease-in-out font-semibold w-screen p-5" href="contact.html">CONTACT</a>
  
      </div>
-     
-
-
 
        <section id="main" style="background-image: url(./img/bg.jpg);" class="bg-cover bg-fixed py-8">
          <section id="" style="background-image: url(./img/About.pg);" class="h-screen bg-no-repeat bg-center bg-cover  border-b border-white ">
             <div class="h-screen flex flex-col justify-center items-center "> <!-- bg-black bg-opacity-60 --> 
              <p class="text-[10vw] text-white tracking-widest ">ENSEMBLE</p>
+         <!--  <img src="./img/logo-removebg.png" alt="" class="w-[60px] h-20px]">  -->
               <p class="text-white font-sans text-[3vw]">THE UNDERGRADUATE PHYSICS CLUB OF IISc</p>
             </div>
          </section>
@@ -99,13 +104,12 @@
              <div id="News_and_Annoucements_container" class="grid grid-cols-1 md:grid-cols-3 gap-6 px-20 py-8"></div>
          </section>
       
- 
          <section id="Newsletter_container" class="h-[50vh] flex flex-col justify-center items-center text-white gap-10 n">
             <p id="NewsLetter_Head" class="text-5xl mb-4 w-[75vw] ">Join our mailing list for updates on events and for receiving our newsletter!</p>
-            <div id="newsletter_form" class="flex items-center justify-between"  method="POST"  action="https://script.google.com/macros/s/AKfycbyTkfPW0vKoE0CWdJ0nG7PETCZiX1GNYoUCN6lD_PmMOqVZ_6gfDhPX19sMv9fk-5Qpog/exec">
-                <input type="email" placeholder="Enter your email" class="px-4 py-2 w-[60vw] h-[50px] border text-black border-white focus:outline-2 focus:outline-blue-600">
-                <button class=" w-[15vw] text-white border border-white hover:bg-blue-800 h-[50px] text-[1.5vw]  focus:outline-none">JOIN US</button>
-            </div>
+            <form id="newsletter_form" class="flex items-center justify-between"  method="POST" action="https://script.google.com/macros/s/AKfycbwyp1XfGOxn_SnPrTdRwyn2JoWxqadV00YryjxlhmRLyYNLpkcEGzzhHUFmf019_KYl0w/exec">
+                <input type="email" placeholder="Enter your email" name="Email_for_newsletter" class="px-4 py-2 w-[60vw] h-[50px] border text-black border-white focus:outline-2 focus:outline-blue-600">
+                <button type="submit" class=" w-[15vw] text-white border border-white hover:bg-blue-800 h-[50px] text-[1.5vw]  focus:outline-none">JOIN US</button>
+            </from>
         </section>
        </section>
  
@@ -126,7 +130,7 @@
                         </span> 
  
                      </a>
-                     <a href="#" class="flex items-center justify-between w-[18vw]">
+                     <a href="https://www.instagram.com/ensemble.iisc/?hl=en" class="flex items-center justify-between w-[18vw]">
                          <img src="./img/instagram_logo.png" class="w-12 h-12">
                         <span class=" flex flex-row gap-2 items-center"> 
                             <span class="bg-white h-2 w-2 rounded-full"></span>

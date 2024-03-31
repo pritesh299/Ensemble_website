@@ -15,12 +15,16 @@ console.log(activitiesNav,activitiesShow.classList)
 
 navIcon.addEventListener('click', () => {
   mobileNav.classList.toggle('hidden');
+  document.querySelector("body").classList.toggle("h-screen")
+  document.querySelector("body").classList.toggle("overflow-hidden")
+
 });
 
-/* const scriptURL="https://script.google.com/macros/s/AKfycbyTkfPW0vKoE0CWdJ0nG7PETCZiX1GNYoUCN6lD_PmMOqVZ_6gfDhPX19sMv9fk-5Qpog/exec"
+const scriptURL="https://script.google.com/macros/s/AKfycbyTkfPW0vKoE0CWdJ0nG7PETCZiX1GNYoUCN6lD_PmMOqVZ_6gfDhPX19sMv9fk-5Qpog/exec"
 
 const form=document.getElementById("newsletter_form")
-  console.log(form)
+if(form===null){}
+else{
 form.addEventListener("submit",(e)=>{
    e.preventDefault()
    fetch(scriptURL,{method:"POST", body: new FormData(form)})
@@ -29,33 +33,57 @@ form.addEventListener("submit",(e)=>{
   .catch(error=>console.error("error",error.message))
 
 })
- */
+}
 
-function setCurrentDateTime() {
-    var now = new Date();
-    var dateTimeString = now.toISOString(); 
-    document.getElementById("datetime").value = dateTimeString;
-  }
-console.log("lol")
+const contactForm = document.getElementById("contactForm");
+console.log(contactForm);
+if(contactForm===null){}
+else{
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    
+    
+    fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(contactForm)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log('Success:', data);
+        alert("Your response has been submitted successfully");
+        window.location.reload();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+}
+
+
 
 let Announcements = [
     {
         imgLink: "./img/atom.jpg",
         title: "Paper Presentation on Quantum-based applications",
         subContent: "Paper presentation done by enthusiastic 1st and 2nd year student. Topics given by the convenors.",
-        readMoreLink: "#"
+        readMoreLink: "./talk.html"
     },
     {
-               imgLink: "./img/stock.jpg",
+               imgLink: "./img/fluid.jpg",
         title: "Lecture series",
         subContent: "Introductory lecture series organised by senior students/convenors in various topics in Physics like Statistical Physics, CMP etc.",
-        readMoreLink: "#"
+        readMoreLink: "./lecture.html"
     },
     {
         imgLink: "./img/news.jpg",
         title: "Newsletters",
         subContent: "From entanglement to superposition, delve into the mysteries of the quantum realm with engaging discussions and interactive experiments. ",
-        readMoreLink: "#"
+        readMoreLink: "./talk.html"
     },
 
 ];
@@ -92,36 +120,56 @@ else{
 }
 });
 
-const G_1_carousel = document.getElementById('gallery_1');
-const G_1_carouselItems = G_1_carousel.querySelectorAll('.G_1_item'); // Use querySelectorAll instead of getElementsByClassName
-const G_1_prevButton = G_1_carousel.querySelector('#G_1_prev'); // Fix typo: Remove the extra ']' and use querySelector instead of getElementById
-const G_1_nextButton = G_1_carousel.querySelector('#G_1_next'); // Fix typo: Remove the extra ']' and use querySelector instead of getElementById
-let currentIndex = 0;
 
-const showItem = index => {
-    G_1_carouselItems.forEach((item, i) => {
-        if (i === index) {
-            item.classList.add('block');
-            item.classList.remove('hidden');
-        } else {
-            item.classList.remove('block');
-            item.classList.add('hidden');
-        }
-    });
-};
 
-const showNext = () => {
-    currentIndex = (currentIndex + 1) % G_1_carouselItems.length;
-    showItem(currentIndex);
-};
+class Slideshow {
+    constructor(containerId) {
+        this.container = document.getElementById(containerId);
+        this.slides = this.container.querySelectorAll('.slideshow-item');
+        this.prevButton = this.container.querySelector('.prev-button');
+        this.nextButton = this.container.querySelector('.next-button');
+        this.currentIndex = 0;
 
-const showPrev = () => {
-    currentIndex = (currentIndex - 1 + G_1_carouselItems.length) % G_1_carouselItems.length;
-    showItem(currentIndex);
-};
+        this.showItem(this.currentIndex);
+        this.prevButton.addEventListener('click', () => this.showPrev());
+        this.nextButton.addEventListener('click', () => this.showNext());
+        this.startAutoSlide();
+    }
 
-G_1_prevButton.addEventListener('click', showPrev);
-G_1_nextButton.addEventListener('click', showNext);
+    showItem(index) {
+        this.slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.classList.add('block');
+                slide.classList.remove('hidden');
+            } else {
+                slide.classList.remove('block');
+                slide.classList.add('hidden');
+            }
+        });
+    }
 
-// Start with the first item displayed
-showItem(currentIndex);
+    showNext() {
+        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+        this.showItem(this.currentIndex);
+    }
+
+    showPrev() {
+        this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+        this.showItem(this.currentIndex);
+    }
+
+    startAutoSlide() {
+        setInterval(() => this.showNext(), 2000);
+    }
+}
+
+// Create instances of the Slideshow class for each slideshow
+const slideshow1 = new Slideshow('gallery_1');
+const slideshow2 = new Slideshow('gallery_2');
+const slideshow3 = new Slideshow('gallery_3');
+const slideshowM1 = new Slideshow('gallery_m01');
+const slideshowM2 = new Slideshow('gallery_m02');
+const slideshowM3 = new Slideshow('gallery_m03');
+
+
+ScrollReveal().reveal('#slide_show_desktop',{ delay: 500 });
